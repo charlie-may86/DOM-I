@@ -101,4 +101,22 @@ contactParagraphs[2].textContent = siteContent['contact']['email'];
 const footerCopyright = document.querySelector('footer p');
 footerCopyright.textContent = siteContent['footer']['copyright'];
 
+// change the nav text to green
+navOne.forEach(x => {
+  x.style.color = 'green';
+})
+
+// add two new items to the nav
+const newContentOne = document.createElement('a');
+newContentOne.textContent = 'new1';
+
+const newContentTwo = document.createElement('a');
+newContentTwo.textContent = 'new2';
+
+const parent = document.querySelector('nav');
+parent.appendChild(newContentOne);
+parent.appendChild(newContentTwo);
+
+// why don't they change colors? Because the nodelist is created (and the color is changed) before the content is added. If it was an html list, it would have worked. But then we wouldn't have been able to use foreach on the the elements. So, if anything should change, it is the order in which the work was run. Why the elements are not evenly spaced, I do not understand.
+
 
