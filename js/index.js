@@ -42,12 +42,43 @@ const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]['img-src'])
 
 // Do the 'a' attributes in the nav bar first
-const navOne = document.querySelectorAll('a')
-navOne[0].textContent = siteContent['nav']['nav-item-1']
-navOne[1].textContent = siteContent['nav']['nav-item-2']
-navOne[2].textContent = siteContent['nav']['nav-item-3']
-navOne[3].textContent = siteContent['nav']['nav-item-4']
-navOne[4].textContent = siteContent['nav']['nav-item-5']
+const navOne = document.querySelectorAll('a');
+navOne[0].textContent = siteContent['nav']['nav-item-1'];
+navOne[1].textContent = siteContent['nav']['nav-item-2'];
+navOne[2].textContent = siteContent['nav']['nav-item-3'];
+navOne[3].textContent = siteContent['nav']['nav-item-4'];
+navOne[4].textContent = siteContent['nav']['nav-item-5'];
 
 // cta section
+
+// h1
+const header = document.querySelector('h1');
+header.textContent = siteContent['cta']['h1'];
+
+// cta button
+const ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent['cta']['button'];
+
+// cta image
+const ctaLogo = document.getElementById('cta-img');
+ctaLogo.setAttribute('src', siteContent['cta']['img-src']);
+
+// main content
+
+// h4 titles
+const mainContent = document.querySelectorAll('.text-content h4');
+mainContent[0].textContent = siteContent['main-content']['features-h4'];
+mainContent[1].textContent = siteContent['main-content']['about-h4'];
+mainContent[2].textContent = siteContent['main-content']['services-h4'];
+mainContent[3].textContent = siteContent['main-content']['product-h4'];
+mainContent[4].textContent = siteContent['main-content']['vision-h4'];
+
+// main content image
+const mainContentImg = document.getElementById('middle-img');
+mainContentImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+
+
+
+
 
